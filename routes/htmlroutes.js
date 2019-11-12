@@ -1,4 +1,4 @@
-let path = require("pat");
+let path = require("path");
 module.exports = function(app) {
   // homepage route
   app.get("/", (req, res) => {
