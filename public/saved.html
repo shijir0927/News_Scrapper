@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap"
+      rel="stylesheet"
+    />
     <title>Saved Articles</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link text-light" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="/saved">Saved Articles</a>
-                </li>
-                <li class="nav-item">
-                        <button class= "btn nav-btn btn-danger" id="clear-articles">Clear Articles</button>
-                </li>
-
-            </ul>
-        </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-light" href="/"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/saved">Saved Articles</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn nav-btn btn-danger" id="clear-articles">
+              Clear Articles
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="container intro">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Saved Articles</h1>
-                <img
-                    src="https://static.adweek.com/adweek.com-prod/wp-content/uploads/files/2016_Oct/npr-podcasting-hed-a-2016.png">
-
-            </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Saved Articles</h1>
+          <img
+            src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_1600/https://www.abbiati.com/wp-content/uploads/2018/09/news-latest-news-business.jpg"
+          />
         </div>
-
+      </div>
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div id="display-saved-articles">
-
-                </div>
-
-            </div>
-            <div class="col-md-6">
-                    <div id="notes-container">
-                        <h2>Notes Will Be Displayed Here!</h2>
-
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="display-saved-articles"></div>
         </div>
+        <div class="col-md-6">
+          <div id="notes-container">
+            <h2>Notes Will Be Displayed Here!</h2>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="/saved.js"></script>
-
-</body>
-
+  </body>
 </html>
