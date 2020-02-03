@@ -10,9 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-var MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/articleScraper";
-mongoose.connect(MONGODB_URI);
+mongoose.connect("mongodb://localhost/unit18Populater", {
+  useNewUrlParser: true
+});
 
 require("./routes/htmlroutes.js")(app);
 require("./routes/apiroutes.js")(app);
