@@ -16,23 +16,30 @@ function displaySavedArticles() {
         newDiv.append($(`<h3>${data[i].title}</h3>`));
         newDiv.append($(`<h5>${data[i].description}</h4>`));
         newDiv.append(
-          $(`<h5><a target="_blank" href="${data[i].link}">Click Here</a></h4>`)
+          $(
+            `<h5><a target="_blank" href="${data[i].link}">Article Link</a></h4>`
+          )
         );
-        newDiv.append(
+        let smallDiv = $(
+          `<div class = "button-row" style = "display: flex; justify-content: space-evenly; margin-top: 20px">`
+        );
+
+        smallDiv.append(
           $(
             `<h5><button class="btn btn-danger unsave-article" data="${data[i]._id}">Unsave Article </button></h5>`
           )
         );
-        newDiv.append(
+        smallDiv.append(
           $(
             `<h5><button class="btn btn-success view-notes" data="${data[i]._id}">View Notes </button></h5>`
           )
         );
-        newDiv.append(
+        smallDiv.append(
           $(
             `<h5><button class="btn btn-primary close-notes">Close Notes</button></h5>`
           )
         );
+        newDiv.append(smallDiv);
         $("#display-saved-articles").append(newDiv);
       }
     } else {
