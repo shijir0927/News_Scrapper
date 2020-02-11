@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://shijir0927:Shijiree0927@cluster0-tndw9.mongodb.net/test?retryWrites=true&w=majority",
+  "mongodb+srv://shijir0927:Shijiree0927@cluster0-tndw9.mongodb.net/news_scraper.saved_news",
   {
     useNewUrlParser: true
   }
