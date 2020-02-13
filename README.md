@@ -15,8 +15,8 @@ https://sleepy-spire-06652.herokuapp.com/
 ## Screenshot
 
 <div style = "display: flex">
-![Screenshot](/screenshot/ss.PNG)
-<img src="screenshot/sss.PNG" height="300" alt = "Mobile Screenshot">
+<img src="screenshot/ss.PNG" height="400" alt = "Desktop Screenshot">
+<img src="screenshot/sss.PNG" height="400" alt = "Mobile Screenshot">
 </div>
 ## Code Structure
 
