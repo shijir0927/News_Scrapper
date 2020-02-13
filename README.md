@@ -15,7 +15,7 @@ https://sleepy-spire-06652.herokuapp.com/
 ## Screenshot
 
 ![Screenshot](/screenshot/ss.PNG)
-![Screenshot](/screenshot/sss.PNG)
+<img src="screenshot/sss.PNG" height="300" alt = "Mobile Screenshot">
 
 ## Code Structure
 
