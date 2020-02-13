@@ -18,6 +18,7 @@ https://sleepy-spire-06652.herokuapp.com/
 <img src="screenshot/ss.PNG" height="400" alt = "Desktop Screenshot">
 <img src="screenshot/sss.PNG" height="400" alt = "Mobile Screenshot">
 </div>
+
 ## Code Structure
 
 My server.js contains the code necessary to launch my application by hosting my HTML, CSS, JavaScript, requiring my routes, and express's settings to function with JSON. The models folder contains my schemas for MongoDB. My routing folder handles all of the appropriate routes. My server file contains the necessary code to run it locally.
